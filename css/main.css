@@ -1,0 +1,243 @@
+/* Main Styles*/
+
+#content, #footer{
+	background: url('../img/background.png');
+}
+
+@font-face {
+    font-family: 'CrimsonRoman';
+    src: url('../font/Crimson-Roman-webfont.eot');
+    src: url('../font/Crimson-Roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Crimson-Roman-webfont.woff') format('woff'),
+         url('../font/Crimson-Roman-webfont.ttf') format('truetype'),
+         url('../font/Crimson-Roman-webfont.svg#CrimsonRoman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CodeProDemoRegular';
+    src: url('../font/Code_Pro_Demo-webfont.eot');
+    src: url('../font/Code_Pro_Demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Code_Pro_Demo-webfont.woff') format('woff'),
+         url('../font/Code_Pro_Demo-webfont.ttf') format('truetype'),
+         url('../font/Code_Pro_Demo-webfont.svg#CodeProDemoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'CodeProLightDemoRegular';
+    src: url('../font/Code_Pro_Light_Demo-webfont.eot');
+    src: url('../font/Code_Pro_Light_Demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/Code_Pro_Light_Demo-webfont.woff') format('woff'),
+         url('../font/Code_Pro_Light_Demo-webfont.ttf') format('truetype'),
+         url('../font/Code_Pro_Light_Demo-webfont.svg#CodeProLightDemoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Nav Bar*/
+
+#header{
+	height: 80px;
+	width: 100%;
+	background: url('../img/background_header.png') repeat-x;
+	position: fixed;
+}
+
+#navbar{
+	width: 610px;
+	overflow: hidden;
+	margin: 30px auto;
+}
+
+#navbar li{
+	list-style: none;
+	font-family: 'CodeProDemoRegular';
+	font-size: 16px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+	color: #fff;
+	float: left;
+	margin-right: 60px;
+}
+
+#navbar li:last-child{
+	margin-right: 0px;
+}
+
+#navbar ul{
+	margin: 0px auto;
+}
+
+#navbar a{
+	text-decoration: none;
+	color: #fff;
+}
+
+#navbar a:hover{
+	color: #E64135;
+}
+
+.nav_divide{
+	width: 10px;
+	height: 10px;
+	margin-left: 50px;
+}
+
+/* Section Labels*/
+
+h2{
+	font-family: 'CodeProLightDemoRegular';
+	font-weight: 600;
+	font-size: 22px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.7);	
+	padding: 5px 10px 0px 0px;
+}
+
+.banner{
+	height: 65px;
+	background: url('../img/label.png') no-repeat;
+	margin: 60px 0px;
+}
+
+/* Header Section*/
+
+#section1{
+	margin-top: 160px;
+	text-align: center;
+}
+
+#tree{
+	width: 400px;
+}
+
+h1{
+	font-family: 'Montez', cursive;
+	font-size: 120px;
+	color: #a30000;
+	text-shadow: 1px 1px 0 #fff;
+	margin-bottom: 50px;
+}
+
+#section1 p{
+	font-family: 'CrimsonRoman', Georgia, serif;
+	text-shadow: 1px 1px 0 #fff;
+	color: #666;
+	font-size: 35px;
+	line-height: 60px;
+}
+
+#section1 span{
+	font-family: 'Montez', cursive;
+	text-shadow: 1px 1px 0 #fff;
+	color: #E64135;
+	font-size: 50px;
+}
+
+/* Portfolio Section */
+
+.portfolio{
+	border-bottom: 1px dotted #999;
+	padding: 10px 0px;
+}
+
+h4{
+	font-family: 'CodeProDemoRegular';
+	font-weight: 100;
+	font-size: 16px;
+	color: #666;
+	text-shadow: 1px 1px 0 #ECEBE8;
+}
+
+#section2 p{
+	color: #666;
+}
+
+.icon-ok-sign{
+	margin-right: 5px;
+}
+
+.img-polaroid{
+	width: inherit;
+	height: 500px;
+	box-shadow: 0px 0px 5px #888;
+}
+
+/* About Section */
+.intro{
+	font-family: 'CrimsonRoman';
+	font-size: 20px;
+	text-align: center;
+	line-height: 2em;
+	color: #666;
+	text-shadow: 1px 1px 0 #ECEBE8;
+}
+
+#section3 div:nth-child(3){
+	margin-top: 40px;
+}
+
+#section3 li{
+	font-size: 16px;
+	line-height: 1.6em;
+	color: #666;
+}
+
+#section3 h4{
+	font-size: 18px;
+}
+
+/* Contact Section */
+
+input, select, textarea{
+	width: 380px;
+}
+
+h3{
+	font-family: 'CodeProLightDemoRegular';
+	font-variant: 600;
+	color: #E64135;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+.connect{
+	border-bottom: 1px dotted #666;
+}
+
+#mail{
+	width: 55px;
+}
+
+#section4 a{
+	font-size: 18px;
+	margin-left: 15px;
+	vertical-align: middle;
+}
+
+.social_icons{
+	width: 65px;
+	margin-top: 20px;
+}
+
+/* Footer */
+#footer p{
+	font-family: 'CodeProDemoRegular';
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.divider{
+	text-align: center;
+	margin: 120px 0px;
+	font-size: 40px;
+	color: #666;
+	text-shadow: 1px 1px 0 #fff;
+}

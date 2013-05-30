@@ -1,7 +1,7 @@
 /* Main Styles*/
 
 #content, #footer{
-	background: url('../img/background.png');
+	background: url('../img/subtle_white_feathers.png') repeat;
 }
 
 @font-face {
@@ -43,10 +43,10 @@
 /* Nav Bar*/
 
 #header{
-	height: 80px;
+	height: 25px;
 	width: 100%;
-	background: url('../img/background_header.png') repeat-x;
-	position: fixed;
+	background: url('../img/header3.png') repeat-x bottom;
+	position: absolute;
 }
 
 #navbar{

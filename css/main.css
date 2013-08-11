@@ -1,66 +1,97 @@
 /* Main Styles*/
 
-#content, #footer{
-	background: url('../img/subtle_white_feathers.png') repeat;
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../font/raleway-extrabold-webfont.eot');
+    src: url('../font/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/raleway-extrabold-webfont.woff') format('woff'),
+         url('../font/raleway-extrabold-webfont.ttf') format('truetype'),
+         url('../font/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'CrimsonRoman';
-    src: url('../font/Crimson-Roman-webfont.eot');
-    src: url('../font/Crimson-Roman-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Crimson-Roman-webfont.woff') format('woff'),
-         url('../font/Crimson-Roman-webfont.ttf') format('truetype'),
-         url('../font/Crimson-Roman-webfont.svg#CrimsonRoman') format('svg');
+    font-family: 'ralewaybold';
+    src: url('../font/raleway-bold-webfont.eot');
+    src: url('../font/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/raleway-bold-webfont.woff') format('woff'),
+         url('../font/raleway-bold-webfont.ttf') format('truetype'),
+         url('../font/raleway-bold-webfont.svg#ralewaybold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'CodeProDemoRegular';
-    src: url('../font/Code_Pro_Demo-webfont.eot');
-    src: url('../font/Code_Pro_Demo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Code_Pro_Demo-webfont.woff') format('woff'),
-         url('../font/Code_Pro_Demo-webfont.ttf') format('truetype'),
-         url('../font/Code_Pro_Demo-webfont.svg#CodeProDemoRegular') format('svg');
+    font-family: 'ralewaysemibold';
+    src: url('../font/raleway-semibold-webfont.eot');
+    src: url('../font/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/raleway-semibold-webfont.woff') format('woff'),
+         url('../font/raleway-semibold-webfont.ttf') format('truetype'),
+         url('../font/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'CodeProLightDemoRegular';
-    src: url('../font/Code_Pro_Light_Demo-webfont.eot');
-    src: url('../font/Code_Pro_Light_Demo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Code_Pro_Light_Demo-webfont.woff') format('woff'),
-         url('../font/Code_Pro_Light_Demo-webfont.ttf') format('truetype'),
-         url('../font/Code_Pro_Light_Demo-webfont.svg#CodeProLightDemoRegular') format('svg');
+    font-family: 'ralewaymedium';
+    src: url('../font/raleway-medium-webfont.eot');
+    src: url('../font/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/raleway-medium-webfont.woff') format('woff'),
+         url('../font/raleway-medium-webfont.ttf') format('truetype'),
+         url('../font/raleway-medium-webfont.svg#ralewaymedium') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../font/raleway-regular-webfont.eot');
+    src: url('../font/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/raleway-regular-webfont.woff') format('woff'),
+         url('../font/raleway-regular-webfont.ttf') format('truetype'),
+         url('../font/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../font/raleway-light-webfont.eot');
+    src: url('../font/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/raleway-light-webfont.woff') format('woff'),
+         url('../font/raleway-light-webfont.ttf') format('truetype'),
+         url('../font/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url('raleway-extralight-webfont.eot');
+    src: url('raleway-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway-extralight-webfont.woff') format('woff'),
+         url('raleway-extralight-webfont.ttf') format('truetype'),
+         url('raleway-extralight-webfont.svg#ralewayextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* Nav Bar*/
 
-#header{
-	height: 20px;
-	width: 100%;
-	background: url('../img/header4.png') repeat-x bottom;
-	position: absolute;
-}
-
 #navbar{
-	width: 400px;
+	width: 410px;
 	overflow: hidden;
-	margin: 50px auto;
+	margin: 60px auto;
 	padding-bottom: 10px;
 	border-bottom: solid 2px rgba(153,153,153,0.4);
 }
 
 #navbar li{
-	list-style: none;
-	font-family: 'CodeProDemoRegular';
+	font-family: 'ralewaysemibold', 'Helvetica', sans-serif;
 	font-size: 16px;
+	text-transform: uppercase;
+	list-style: none;
 	float: left;
 	margin-right: 60px;
 }
@@ -78,160 +109,308 @@
 	color: #666;
 }
 
+a:hover{
+	text-decoration: none;
+}
+
 #navbar a:hover{
-	color: #cd0000;
-}
-
-/* Section Labels*/
-
-h2{
-	font-family: 'CodeProLightDemoRegular';
-	font-weight: 600;
-	font-size: 22px;
-	text-align: center;
-	color: #fff;
-	text-shadow: 1px 1px 2px rgba(0,0,0,0.7);	
-	padding: 5px 10px 0px 0px;
-}
-
-.banner{
-	height: 65px;
-	background: url('../img/label4.png') no-repeat;
-	margin: 60px 0px;
+	color: #ff6b20;
 }
 
 /* Header Section*/
 
-#section1{
-	margin-top: 160px;
+#header{
+	height: 800px;
+	width: 100%;
+	background: url('../img/background3.png') no-repeat center center fixed;
+	-webkit-background-size: cover; /*for webkit*/
+       -moz-background-size: cover; /*Mozilla*/
+         -o-background-size: cover;
+	        background-size: cover;
+}
+
+.intro{
+	margin-top: 90px;
+}
+
+#header h1{
+	font-family: 'ralewaybold';
+	text-transform: uppercase;
 	text-align: center;
+	font-size: 6em;
+	color: #fff;
+	text-shadow: 3px 3px 3px rgba(153,153,153,0.5);
 }
 
-#tree{
-	width: 400px;
+#header h3{
+	font-family: 'ralewaymedium';
+	text-align: center;
+	font-size: 2.2em;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(153,153,153,0.7);
 }
 
-h1{
-	font-family: 'Montez', cursive;
-	font-size: 120px;
-	color: #cd0000;
-	text-shadow: 1px 1px 0 #fff;
-	margin-bottom: 50px;
+.bttn{
+	background-color: #ff9933;
+	font-family: 'ralewaysemibold';
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 15px;
+	border: none;
+	border-bottom: 5px solid #ff6b20;
+	border-radius: 5px;
+	display: block;
+	margin: 60px auto;
+	color: #fff;
 }
 
-#section1 p{
-	font-family: 'CrimsonRoman', Georgia, serif;
-	text-shadow: 1px 1px 0 #fff;
-	color: #666;
-	font-size: 35px;
-	line-height: 60px;
+.bttn:hover{
+	background-color: #ff7119;
+	border-bottom: 5px solid #ff9933;
 }
 
-#section1 span{
-	font-family: 'Montez', cursive;
-	text-shadow: 1px 1px 0 #fff;
-	color: #820d0d;
-	font-size: 50px;
-}
 
 /* Portfolio Section */
 
-.portfolio{
-	border-bottom: 1px dotted #999;
-	padding: 10px 0px;
-}
-
-h4{
-	font-family: 'CodeProDemoRegular';
-	font-weight: 100;
-	font-size: 16px;
-	color: #666;
-	text-shadow: 1px 1px 0 #ECEBE8;
-}
-
-#section2 p{
-	color: #666;
-}
-
-.icon-ok-sign{
-	margin-right: 5px;
-}
-
-.img-polaroid{
-	width: inherit;
+div[id^="work"]{
+	padding: 120px 0px;
 	height: 500px;
-	box-shadow: 0px 0px 5px #888;
 }
 
-/* About Section */
-.intro{
-	font-family: 'CrimsonRoman';
-	font-size: 20px;
-	text-align: center;
-	line-height: 2em;
-	color: #666;
-	text-shadow: 1px 1px 0 #ECEBE8;
+div[id^="work"] .bttn{
+	text-transform: lowercase;
+	margin: 20px 0px;
+	padding: 10px;
 }
 
-#section3 div:nth-child(3){
-	margin-top: 40px;
+div[id^="work"] h2{
+	font-family: 'ralewaymedium';
+	font-size: 2.4em;
+	color: #19379c;
 }
 
-#section3 li{
-	font-size: 16px;
-	line-height: 1.6em;
-	color: #666;
-}
-
-#section3 h4{
-	font-size: 18px;
-}
-
-/* Contact Section */
-
-input, select, textarea{
-	width: 380px;
-}
-
-h3{
-	font-family: 'CodeProLightDemoRegular';
-	font-variant: 600;
-	color: #cd0000;
-	text-shadow: 1px 1px 0 #fff;
-}
-
-.connect{
-	border-bottom: 1px dotted #666;
-}
-
-#mail{
-	width: 55px;
-}
-
-#section4 a{
-	font-size: 18px;
-	margin-left: 15px;
-	vertical-align: middle;
-}
-
-.social_icons{
-	width: 65px;
+#work-1 h2{
 	margin-top: 20px;
 }
 
-/* Footer */
-#footer p{
-	font-family: 'CodeProDemoRegular';
-	font-size: 14px;
-	color: #666;
-	text-align: center;
-	margin-bottom: 50px;
+.webdesign1{
+	position: absolute;
+	width: 69%;
+	min-width: 750px;
+	left: -40px;
 }
 
-.divider{
-	text-align: center;
-	margin: 120px 0px;
-	font-size: 40px;
-	color: #666;
-	text-shadow: 1px 1px 0 #fff;
+.webdesign2{
+	position: absolute;
+	width: 69%;
+	min-width: 750px;
+	right: -40px;
 }
+
+#work-2 h2{
+	text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
+}
+
+div[id^="work"] .role, .date{
+	font-family: 'Georgia';
+	font-style: italic;
+	color: #19379c;
+	padding: 10px 0px;
+}
+
+.role{
+	margin-bottom: 0px;
+	border-bottom: solid 1px #19379c;	
+}
+
+.date{
+	border-top: solid 1px rgba(255,255,255,0.5);
+	border-bottom: solid 1px #19379c;
+	margin-bottom: 0px;
+}
+
+.description{
+	border-top: solid 1px rgba(255,255,255,0.5);
+	padding-top: 10px;
+	line-height: 1.6em;
+}
+
+#work-1{
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 61%, #f3f4e1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(61%,#ffffff), color-stop(100%,#f3f4e1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 61%,#f3f4e1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 61%,#f3f4e1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 61%,#f3f4e1 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 61%,#f3f4e1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f4e1',GradientType=0 ); /* IE6-9 */
+}
+
+.span4{
+	width: 280px;
+	margin-left: 40px;
+}
+
+#work-2{
+background: #9bccbc; /* Old browsers */
+background: -moz-linear-gradient(top,  #9bccbc 0%, #c5e2d1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9bccbc), color-stop(100%,#c5e2d1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #9bccbc 0%,#c5e2d1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #9bccbc 0%,#c5e2d1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #9bccbc 0%,#c5e2d1 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #9bccbc 0%,#c5e2d1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bccbc', endColorstr='#c5e2d1',GradientType=0 ); /* IE6-9 */
+}
+
+#work-2 .span4{
+	width: 280px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+/* About Section */
+
+#about-1{
+	background-color: #f3f6dc;
+	padding: 100px 0px;
+}
+
+div[id^="about"] h2, h4{
+	font-family: 'ralewaymedium';
+	text-align: center;
+}
+
+div[id^="about"] p{
+	font-family: 'ralewaymedium';
+	color: #666;
+}
+
+.icon{
+	display: block;
+	margin: 70px auto 30px auto;
+}
+
+#about-2{
+	background-color: rgba(225,235,157,0.8);
+	padding: 50px 0px;
+}
+
+#about-2 h3{
+	font-family: 'ralewayregular';
+	font-size: 1.5em;
+	color: #283d80;
+	margin-top: 40px;
+}
+
+#about-2 p{
+	font-family: 'ralewaylight';
+	font-size: 1.8em;
+	color: #666;
+	line-height: 1.4em;
+	padding-right: 40px;
+}
+
+iframe{
+	width: 450px;
+	height: 450px;
+	border-radius: 300px;
+	opacity: 0.7;
+}
+
+/* Modal Form */
+
+.modalDialog {
+	position: fixed;
+	font-family: 'ralewaymedium', Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 600px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+/* Footer */
+
+#footer{
+	padding: 100px 0px;
+	text-align: center;
+}
+
+#footer h3{
+	font-family: 'ralewaysemibold';
+	font-size: 1.4em;
+	text-transform: uppercase;
+	color: #333;
+}
+
+#footer h2{
+	font-family: 'ralewayregular';
+	font-size: 1.8em;
+	margin-top: 50px;
+	color: #666;
+}
+
+#footer .bttn{
+	font-size: 20px;
+	padding: 15px 20px;
+	margin: 80px auto 110px auto;
+	color: #fff;
+}
+
+.social{
+	width: 20px;
+	margin: 0px 25px;
+	opacity: 0.3;
+}
+
+#footer p{
+	font-family: 'helvetica';
+	font-size: 0.8em;
+	text-transform: uppercase;
+	color: #999;
+	margin-top: 40px;
+}
+
+
+

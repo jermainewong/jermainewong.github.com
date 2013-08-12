@@ -115,6 +115,7 @@ a:hover{
 
 #navbar a:hover{
 	color: #ff6b20;
+	-webkit-transition: all 0.5s ease;
 }
 
 /* Header Section*/
@@ -123,6 +124,7 @@ a:hover{
 	height: 800px;
 	width: 100%;
 	background: url('../img/background3.png') no-repeat center center fixed;
+	background-size: auto;
 	-webkit-background-size: cover; /*for webkit*/
        -moz-background-size: cover; /*Mozilla*/
          -o-background-size: cover;
@@ -299,12 +301,11 @@ div[id^="about"] p{
 	font-family: 'ralewayregular';
 	font-size: 1.5em;
 	color: #283d80;
-	margin-top: 40px;
 }
 
 #about-2 p{
 	font-family: 'ralewaylight';
-	font-size: 1.8em;
+	font-size: 1.6em;
 	color: #666;
 	line-height: 1.4em;
 	padding-right: 40px;

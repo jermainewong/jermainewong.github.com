@@ -123,7 +123,7 @@ a:hover{
 #header{
 	height: 800px;
 	width: 100%;
-	background: url('../img/background3.png') no-repeat center center fixed;
+	background: url('../img/background3.jpg') no-repeat center center fixed;
 	background-size: auto;
 	-webkit-background-size: cover; /*for webkit*/
        -moz-background-size: cover; /*Mozilla*/
@@ -220,7 +220,7 @@ div[id^="work"] .role, .date{
 
 .role{
 	margin-bottom: 0px;
-	border-bottom: solid 1px #19379c;	
+	border-bottom: solid 1px #19379c;
 }
 
 .date{
@@ -443,4 +443,3 @@ textarea{
 }
 
 .close:hover { background: #00d9ff; }
-

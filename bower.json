@@ -1,0 +1,14 @@
+{
+  "name": "jermainewong.github.com",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.localScroll": "git://github.com/flesler/jquery.localScroll.git#~1.2.8"
+  }
+}

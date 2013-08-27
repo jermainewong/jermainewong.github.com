@@ -139,10 +139,11 @@
 	  <div class="span12">
 	    <h3>Let's Work Together</h3>
 	    <h2>Got an interesting project and want to work on it with me?</h2>
-	    <a href="#openModal"><button class="bttn">Get in touch</button></a>
-	    <div id="openModal" class="modalDialog">
+	    <button class="bttn" data-toggle="modal" data-target="#openModal">Get in touch</button>
+
+	    <div id="openModal" class="modal-dialog modal hide fade" role="dialog" aria-labelledby="openModal" aria-hidden="true" tabindex="-1">
 	      <div>
-		<a href="#close" title="Close" class="close">X</a>
+		<a href="#close" title="Close" class="close" data-dismiss="modal" aria-hidden="true">X</a>
 		<h2>Drop me a line</h2>
 		<form class="form-horizontal">
 		  <div class="control-group">
@@ -163,8 +164,11 @@
 		      <textarea rows="5" id="inputMessage"></textarea>
 		    </div>
 		  </div>
-		  <div class="pull-right">
-		    <button class="btn">Send</button>
+
+		  <div class="control-group">
+		    <div class="controls">
+		      <button type="submit" class="btn">Send</button>
+		    </div>
 		  </div>
 		</form>
 		<div class="email-contact">

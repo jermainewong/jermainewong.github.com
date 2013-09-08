@@ -1,15 +1,6 @@
 /* Main Styles*/
 
-@font-face {
-    font-family: 'ralewayextrabold';
-    src: url('../font/raleway-extrabold-webfont.eot');
-    src: url('../font/raleway-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/raleway-extrabold-webfont.woff') format('woff'),
-         url('../font/raleway-extrabold-webfont.ttf') format('truetype'),
-         url('../font/raleway-extrabold-webfont.svg#ralewayextrabold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Font Face */
 
 @font-face {
     font-family: 'ralewaybold';
@@ -66,47 +57,40 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'ralewayextralight';
-    src: url('raleway-extralight-webfont.eot');
-    src: url('raleway-extralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway-extralight-webfont.woff') format('woff'),
-         url('raleway-extralight-webfont.ttf') format('truetype'),
-         url('raleway-extralight-webfont.svg#ralewayextralight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Nav Bar*/
 
 #navbar{
-	width: 410px;
+	width: 32%;
 	overflow: hidden;
-	margin: 60px auto;
-	padding-bottom: 10px;
+	margin: 5% auto;
+	padding-bottom: 1%;
 	border-bottom: solid 2px rgba(153,153,153,0.4);
 }
 
 #navbar li{
 	font-family: 'ralewaybold', 'Helvetica', sans-serif;
-	font-size: 16px;
+	font-size: 1.2em;
 	text-transform: uppercase;
 	list-style: none;
 	float: left;
-	margin-right: 60px;
+	margin-right: 11%;
 }
 
 #navbar li:last-child{
-	margin-right: 0px;
+	margin-right: 0%;
 }
 
 #navbar ul{
-	margin: 0px auto;
+	margin: 0% auto;
 }
 
 #navbar a{
 	text-decoration: none;
 	color: #666;
+}
+
+a{
+	text-decoration: none;
 }
 
 a:hover{
@@ -115,16 +99,20 @@ a:hover{
 
 #navbar a:hover{
 	color: #ff6b20;
-	-webkit-transition: all 0.5s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
 }
 
 /* Header Section*/
+
+.container-fluid{
+	padding: 0%;
+}
 
 #header{
 	height: 800px;
 	width: 100%;
 	background: url('../img/background3.png') no-repeat center center fixed;
-	background-size: auto;
 	-webkit-background-size: cover; /*for webkit*/
        -moz-background-size: cover; /*Mozilla*/
          -o-background-size: cover;
@@ -132,7 +120,7 @@ a:hover{
 }
 
 .intro{
-	margin-top: 90px;
+	margin-top: 6%;
 }
 
 #header h1{
@@ -140,6 +128,7 @@ a:hover{
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 6em;
+	margin: 4%;
 	color: #fff;
 	text-shadow: 3px 3px 3px rgba(153,153,153,0.5);
 }
@@ -147,7 +136,7 @@ a:hover{
 #header h3{
 	font-family: 'ralewaymedium';
 	text-align: center;
-	font-size: 2.2em;
+	font-size: 2em;
 	color: #fff;
 	text-shadow: 1px 1px 2px rgba(153,153,153,0.7);
 }
@@ -156,13 +145,13 @@ a:hover{
 	background-color: #ff9933;
 	font-family: 'ralewaysemibold';
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 1.125em;
 	padding: 15px;
 	border: none;
 	border-bottom: 5px solid #ff6b20;
 	border-radius: 5px;
 	display: block;
-	margin: 60px auto;
+	margin: 4% auto;
 	color: #fff;
 }
 
@@ -175,8 +164,17 @@ a:hover{
 /* Portfolio Section */
 
 div[id^="work"]{
-	padding: 120px 0px;
+	width: 100%;
 	height: 500px;
+	padding: 10% 0%;
+}
+
+#work-1 .span4{
+	padding-right: 10%;
+}
+
+#work-2 .span4{
+	padding-left: 10%;
 }
 
 div[id^="work"] .bttn{
@@ -189,22 +187,6 @@ div[id^="work"] h2{
 	font-family: 'ralewaymedium';
 	font-size: 2.4em;
 	color: #19379c;
-}
-
-#work-1 h2{
-	margin-top: 20px;
-}
-
-.webdesign1{
-	position: absolute;
-	width: 70%;
-	left: -60px;
-}
-
-.webdesign2{
-	position: absolute;
-	width: 70%;
-	right: -60px;
 }
 
 #work-2 h2{
@@ -246,10 +228,6 @@ background: linear-gradient(to bottom,  #ffffff 61%,#f3f4e1 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f4e1',GradientType=0 ); /* IE6-9 */
 }
 
-.span4{
-	width: 280px;
-	margin-left: 40px;
-}
 
 #work-2{
 background: #9bccbc; /* Old browsers */
@@ -262,17 +240,18 @@ background: linear-gradient(to bottom,  #9bccbc 0%,#c5e2d1 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bccbc', endColorstr='#c5e2d1',GradientType=0 ); /* IE6-9 */
 }
 
-#work-2 .span4{
-	width: 280px;
-	margin-left: 20px;
-	margin-right: 20px;
-}
 
 /* About Section */
 
 #about-1{
 	background-color: #f3f6dc;
-	padding: 100px 0px;
+	width: 100%;
+	height: 500px;
+	padding: 10% 0%;
+}
+
+div[id^="about"] .container-fluid{
+	padding: 0% 10%;
 }
 
 div[id^="about"] h2, h4{
@@ -292,28 +271,29 @@ div[id^="about"] p{
 
 #about-2{
 	background-color: rgba(225,235,157,0.8);
-	padding: 50px 0px;
+	width: 100%;
+	height: 450px;
+	padding: 5% 0%;
 }
 
 #about-2 h3{
 	font-family: 'ralewayregular';
 	font-size: 1.5em;
+	padding-left: 5%;
 	color: #283d80;
 }
 
 #about-2 p{
 	font-family: 'ralewaylight';
-	font-size: 1.6em;
+	font-size: 1.5em;
 	color: #666;
 	line-height: 1.4em;
-	padding-right: 40px;
+	padding-left: 5%;
 }
 
-iframe{
-	width: 450px;
-	height: 450px;
-	border-radius: 300px;
-	opacity: 0.7;
+.profilepic{
+	width: 100%;
+	opacity: 0.85;
 }
 
 
@@ -443,4 +423,28 @@ textarea{
 }
 
 .close:hover { background: #00d9ff; }
+
+
+/* Media Queries */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

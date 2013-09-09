@@ -1,6 +1,6 @@
 /* Main Styles*/
 
-/* Font Face */
+/* @Font Face */
 
 @font-face {
     font-family: 'ralewaybold';
@@ -100,7 +100,9 @@ a:hover{
 #navbar a:hover{
 	color: #ff6b20;
 	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+		 -o-transition: all 0.3s ease;
+		    transition: all 0.3s ease;
 }
 
 /* Header Section*/
@@ -112,7 +114,7 @@ a:hover{
 #header{
 	height: 800px;
 	width: 100%;
-	background: url('../img/background3.png') no-repeat center center fixed;
+	background: url('../img/background3.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover; /*for webkit*/
        -moz-background-size: cover; /*Mozilla*/
          -o-background-size: cover;
@@ -160,8 +162,7 @@ a:hover{
 	border-bottom: 5px solid #ff9933;
 }
 
-
-/* Portfolio Section */
+/* Work (Portfolio) Section */
 
 div[id^="work"]{
 	width: 100%;
@@ -228,7 +229,6 @@ background: linear-gradient(to bottom,  #ffffff 61%,#f3f4e1 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f4e1',GradientType=0 ); /* IE6-9 */
 }
 
-
 #work-2{
 background: #9bccbc; /* Old browsers */
 background: -moz-linear-gradient(top,  #9bccbc 0%, #c5e2d1 100%); /* FF3.6+ */
@@ -239,7 +239,6 @@ background: -ms-linear-gradient(top,  #9bccbc 0%,#c5e2d1 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #9bccbc 0%,#c5e2d1 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bccbc', endColorstr='#c5e2d1',GradientType=0 ); /* IE6-9 */
 }
-
 
 /* About Section */
 
@@ -296,7 +295,6 @@ div[id^="about"] p{
 	opacity: 0.85;
 }
 
-
 /* Footer */
 
 #footer{
@@ -327,6 +325,7 @@ div[id^="about"] p{
 
 .social{
 	width: 20px;
+	padding: 15px;
 	margin: 0px 25px;
 	opacity: 0.3;
 }
@@ -337,6 +336,13 @@ div[id^="about"] p{
 	text-transform: uppercase;
 	color: #999;
 	margin-top: 40px;
+}
+
+.social:hover{
+	background-color: #B8C0D1;
+	border-radius: 5px;
+	color: #fff;
+    transition: background-color 0s ease 0s, color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
 
 /* Modal Form */
@@ -423,7 +429,6 @@ textarea{
 }
 
 .close:hover { background: #00d9ff; }
-
 
 /* Media Queries */
 

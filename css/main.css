@@ -1,87 +1,60 @@
-/* Main Styles*/
-
-/* @Font Face */
-
-@font-face {
-    font-family: 'ralewaybold';
-    src: url('../font/raleway-bold-webfont.eot');
-    src: url('../font/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/raleway-bold-webfont.woff') format('woff'),
-         url('../font/raleway-bold-webfont.ttf') format('truetype'),
-         url('../font/raleway-bold-webfont.svg#ralewaybold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+/* --------------------------------------------------------------------------
+   Header, navbar
+   -------------------------------------------------------------------------- */
+header{
+	height: 600px;
+	background: url('../img/background3.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover; /*for webkit*/
+       -moz-background-size: cover; /*Mozilla*/
+         -o-background-size: cover;
+	        background-size: cover;
 }
 
-@font-face {
-    font-family: 'ralewaysemibold';
-    src: url('../font/raleway-semibold-webfont.eot');
-    src: url('../font/raleway-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/raleway-semibold-webfont.woff') format('woff'),
-         url('../font/raleway-semibold-webfont.ttf') format('truetype'),
-         url('../font/raleway-semibold-webfont.svg#ralewaysemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
+header h1{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 74px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 3px 3px 3px rgba(153,153,153,0.5);
 }
 
-@font-face {
-    font-family: 'ralewaymedium';
-    src: url('../font/raleway-medium-webfont.eot');
-    src: url('../font/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/raleway-medium-webfont.woff') format('woff'),
-         url('../font/raleway-medium-webfont.ttf') format('truetype'),
-         url('../font/raleway-medium-webfont.svg#ralewaymedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ralewayregular';
-    src: url('../font/raleway-regular-webfont.eot');
-    src: url('../font/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/raleway-regular-webfont.woff') format('woff'),
-         url('../font/raleway-regular-webfont.ttf') format('truetype'),
-         url('../font/raleway-regular-webfont.svg#ralewayregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'ralewaylight';
-    src: url('../font/raleway-light-webfont.eot');
-    src: url('../font/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/raleway-light-webfont.woff') format('woff'),
-         url('../font/raleway-light-webfont.ttf') format('truetype'),
-         url('../font/raleway-light-webfont.svg#ralewaylight') format('svg');
-    font-weight: normal;
-    font-style: normal;
+header h3{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 500;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(153,153,153,0.7);
 }
 
 /* Nav Bar*/
 
+nav .col-xs-12{
+	text-align: center;
+}
+
 #navbar{
-	width: 32%;
-	overflow: hidden;
-	margin: 5% auto;
-	padding-bottom: 1%;
+	display: inline-block;
+	width: 380px;
+	margin: 5% 0px;
+	padding: 0px 20px 10px 20px;
 	border-bottom: solid 2px rgba(153,153,153,0.4);
 }
 
 #navbar li{
-	font-family: 'ralewaybold', 'Helvetica', sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
 	font-size: 1.2em;
+	font-weight: 700;
 	text-transform: uppercase;
 	list-style: none;
 	float: left;
-	margin-right: 11%;
+	margin-right: 35px;
 }
 
 #navbar li:last-child{
-	margin-right: 0%;
-}
-
-#navbar ul{
-	margin: 0% auto;
+	margin-right: 0px;
 }
 
 #navbar a{
@@ -105,49 +78,12 @@ a:hover{
 		    transition: all 0.3s ease;
 }
 
-/* Header Section*/
-
-.container-fluid{
-	padding: 0%;
-}
-
-#header{
-	height: 800px;
-	width: 100%;
-	background: url('../img/background3.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover; /*for webkit*/
-       -moz-background-size: cover; /*Mozilla*/
-         -o-background-size: cover;
-	        background-size: cover;
-}
-
-.intro{
-	margin-top: 6%;
-}
-
-#header h1{
-	font-family: 'ralewaybold';
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 6em;
-	margin: 4%;
-	color: #fff;
-	text-shadow: 3px 3px 3px rgba(153,153,153,0.5);
-}
-
-#header h3{
-	font-family: 'ralewaymedium';
-	text-align: center;
-	font-size: 2em;
-	color: #fff;
-	text-shadow: 1px 1px 2px rgba(153,153,153,0.7);
-}
-
 .bttn{
 	background-color: #ff9933;
-	font-family: 'ralewaysemibold';
+	font-family: 'Raleway', Helvetica, sans-serif;
 	text-transform: uppercase;
 	font-size: 1.125em;
+	font-weight: 600;
 	padding: 15px;
 	border: none;
 	border-bottom: 5px solid #ff6b20;
@@ -162,29 +98,26 @@ a:hover{
 	border-bottom: 5px solid #ff9933;
 }
 
-/* Work (Portfolio) Section */
 
-div[id^="work"]{
-	width: 100%;
-	height: 500px;
+/* --------------------------------------------------------------------------
+   Work (portfolio) section
+   -------------------------------------------------------------------------- */
+
+section[id^="work"]{
 	padding: 10% 0%;
 }
 
-#work-1 .span4{
-	padding-right: 10%;
+section[id^="work"] img{
+	width: 800px;
 }
 
-#work-2 .span4{
-	padding-left: 10%;
-}
-
-div[id^="work"] .bttn{
+section[id^="work"] .bttn{
 	text-transform: lowercase;
 	margin: 20px 0px;
 	padding: 10px;
 }
 
-div[id^="work"] h2{
+section[id^="work"] h2{
 	font-family: 'ralewaymedium';
 	font-size: 2.4em;
 	color: #19379c;
@@ -194,7 +127,7 @@ div[id^="work"] h2{
 	text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
 }
 
-div[id^="work"] .role, .date{
+section[id^="work"] .role, .date{
 	font-family: 'Georgia';
 	font-style: italic;
 	color: #19379c;
@@ -240,26 +173,34 @@ background: linear-gradient(to bottom,  #9bccbc 0%,#c5e2d1 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bccbc', endColorstr='#c5e2d1',GradientType=0 ); /* IE6-9 */
 }
 
-/* About Section */
-
+/* --------------------------------------------------------------------------
+   About section
+   -------------------------------------------------------------------------- */
 #about-1{
 	background-color: #f3f6dc;
-	width: 100%;
-	height: 500px;
-	padding: 10% 0%;
+	padding: 100px 0px;
 }
 
-div[id^="about"] .container-fluid{
+section[id^="about"] .row{
 	padding: 0% 10%;
 }
 
-div[id^="about"] h2, h4{
-	font-family: 'ralewaymedium';
+section[id^="about"] h2, h4{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 500;
 	text-align: center;
 }
 
-div[id^="about"] p{
-	font-family: 'ralewaymedium';
+#about-1 h4{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 500;
+	text-align: center;
+	color: #666;
+}
+
+section[id^="about"] p{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 500;
 	color: #666;
 }
 
@@ -270,20 +211,20 @@ div[id^="about"] p{
 
 #about-2{
 	background-color: rgba(225,235,157,0.8);
-	width: 100%;
-	height: 450px;
-	padding: 5% 0%;
+	padding: 100px 0px;
 }
 
 #about-2 h3{
-	font-family: 'ralewayregular';
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 400;
 	font-size: 1.5em;
 	padding-left: 5%;
 	color: #283d80;
 }
 
 #about-2 p{
-	font-family: 'ralewaylight';
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 100;
 	font-size: 1.5em;
 	color: #666;
 	line-height: 1.4em;
@@ -295,7 +236,9 @@ div[id^="about"] p{
 	opacity: 0.85;
 }
 
-/* Footer */
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
 
 #footer{
 	padding: 100px 0px;
@@ -303,14 +246,16 @@ div[id^="about"] p{
 }
 
 #footer h3{
-	font-family: 'ralewaysemibold';
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 600;
 	font-size: 1.4em;
 	text-transform: uppercase;
 	color: #333;
 }
 
 #footer h2{
-	font-family: 'ralewayregular';
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 400;
 	font-size: 1.8em;
 	margin-top: 50px;
 	color: #666;
@@ -323,19 +268,14 @@ div[id^="about"] p{
 	color: #fff;
 }
 
-.social{
-	width: 20px;
-	padding: 15px;
-	margin: 0px 25px;
-	opacity: 0.3;
+#footer a{
+	font-size: 18px;
 }
 
-.small{
-	font-family: 'helvetica';
-	font-size: 0.8em;
-	text-transform: uppercase;
+.social{
+	margin: 0px 25px;
+	padding: 15px;
 	color: #999;
-	margin-top: 40px;
 }
 
 .social:hover{
@@ -345,87 +285,87 @@ div[id^="about"] p{
     transition: background-color 0s ease 0s, color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 }
 
-/* Modal Form */
-
-form{
-	text-align: left;
-	overflow: hidden;
+.small{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	color: #999;
+	margin-top: 40px;
 }
 
-input{
-	width: 250px;
-}
-
-textarea{
-	width: 250px;
-}
-
-.pull-right{
-	margin: 0px 155px 10px 0px;
-}
-
-.email-contact p{
-	font-size: 0.9em;
-	color: #666;
+/* --------------------------------------------------------------------------
+   Modal
+   -------------------------------------------------------------------------- */
+#contactModal h2{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 20px;
 	text-transform: uppercase;
 }
 
-.email-contact a{
-	font-size: 1.3em;
-	display: block;
-	margin-bottom: 30px;
+#contactModal p{
+	margin-bottom: 0px;
+	color: #999;
 }
 
-#openModal h2{
-	font-size: 2.2em;
-	margin: 30px 0px 20px 0px;
+#contactModal .btn{
+	background-color: #ff9933;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 10px 25px;
+	border-bottom: 5px solid #ff6b20;
+	border-radius: 5px;;
+	color: #fff;
 }
 
-.modalDialog{
-	position: fixed;
-	font-family: 'ralewaymedium', Helvetica, sans-serif;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.7);
-	z-index: 99999;
-	opacity:0;
-	-webkit-transition: opacity 400ms ease-in;
-	-moz-transition: opacity 400ms ease-in;
-	transition: opacity 400ms ease-in;
-	pointer-events: none;
+#contactModal .btn:hover{
+	background-color: #ff7119;
+	border-bottom: 5px solid #ff9933;
 }
 
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
+/* --------------------------------------------------------------------------
+   Media Queries for Responsive Design.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px){
+	section[id^="work"] img{
+		width: 650px;
+	}
 }
 
-.modalDialog > div {
-	width: 600px;
-	position: relative;
-	margin: 5% auto;
-	padding: 30px;
-	border-radius: 10px;
-	background: #fff;
+@media screen and (max-width: 1000px){
+	header h1{
+		font-size: 54px;
+	}
+	section[id^="work"] img{
+		width: 100%;
+	}
 }
 
-.close {
-	font-size: 16px;
-	background: #4f4f4f;
-	color: #FFFFFF;
-	line-height: 25px;
-	position: absolute;
-	right: 10px;
-	text-align: center;
-	top: 10px;
-	width: 24px;
-	text-decoration: none;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	border-radius: 12px;
-
+@media screen and (max-width: 580px){
+	header{
+		height: 400px;
+	}
+	header h1{
+		font-size: 36px;
+	}
+	header h3{
+		font-size: 18px;
+	}
+	#navbar{
+		width: 300px;
+		padding: 0px 10px 10px 10px;
+	}
+	#navbar li{
+		margin-right: 25px;
+		font-size: 14px;
+	}
+	section[id^="work"] h2{
+		font-size: 24px;
+	}
+	#about-1{
+		padding: 40px 0px;
+	}
+	#about-2{
+		padding: 40px 0px;
+	}
 }
-
-.close:hover { background: #00d9ff; }

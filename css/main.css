@@ -1,371 +1,334 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
 /* --------------------------------------------------------------------------
-   Header, navbar
+   Browse Happy prompt
    -------------------------------------------------------------------------- */
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* --------------------------------------------------------------------------
+   Main styles
+   -------------------------------------------------------------------------- */
+.bkg-grey{
+	background: #f3f3f3;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------------- */
+   
 header{
-	height: 600px;
-	background: url('../img/background3.jpg') no-repeat center center fixed;
-	-webkit-background-size: cover; /*for webkit*/
-       -moz-background-size: cover; /*Mozilla*/
-         -o-background-size: cover;
-	        background-size: cover;
-}
-
-header h1{
-	font-family: 'Raleway', Helvetica, sans-serif;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 74px;
+	height: 650px;
+	background: url('../img/bkg-hero.png') no-repeat center center fixed;
+	background-size: cover;
+}     
+   
+.logo{
+	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 700;
-	color: #fff;
-	text-shadow: 3px 3px 3px rgba(153,153,153,0.5);
+	font-size: 22px;
 }
 
-header h3{
-	font-family: 'Raleway', Helvetica, sans-serif;
+.hero-txt{
+	margin: 100px 0px;
+	z-index: 30;
+}
+
+.hero-txt h1{
+	margin: 0px;
+	font-size: 64px;
+	font-family: 'Forum', cursive;
+	font-weight: 700;
+}
+
+.hero-txt h2{
+	margin-top: 10px;
+	font-size: 34px;
+	font-family: 'Forum', cursive;
+	font-weight: 700;
+}
+
+
+/* --------------------------------------------------------------------------
+   Slant Interims
+   -------------------------------------------------------------------------- */
+.position-rel{
+	position: relative;
+}
+
+.slant:before{
+	background: #fff;
+	content: "";
+	display: block;
+	height: 225px;
+	left: 50%;
+	position: absolute;
+	bottom: 0;
+	transform: rotate(-5deg) translateX(-50%);
+	-ms-transform: rotate(-5deg) translateX(-50%); 
+    -webkit-transform: rotate(-5deg) translateX(-50%);
+	transform-origin: center top 0;
+	-ms-transform-origin: center top 0;
+	-webkit-transform-origin: center top 0;
+	width: 120%;
+	z-index: 5;
+}
+
+.interim-title{
+	width: 100%;
+	position: absolute;
+	bottom: 75px;
 	text-align: center;
-	font-size: 24px;
-	font-weight: 500;
-	color: #fff;
-	text-shadow: 1px 1px 2px rgba(153,153,153,0.7);
+	z-index: 10;
 }
 
-/* Nav Bar*/
+.interim-title span{
+	font-size: 44px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+}
 
-nav .col-xs-12{
+.interim-title-work{
+	width: 100%;
+	position: absolute;
+	bottom: -155px;
 	text-align: center;
+	z-index: 10;
 }
 
-#navbar{
+.interim-title-work span{
+	font-size: 44px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+}
+
+.overlay{
+	z-index: 20;
+} 
+
+
+/* --------------------------------------------------------------------------
+   Profile Section
+   -------------------------------------------------------------------------- */   
+.about{
+	margin-bottom: 180px;
+}   
+   
+.about h2{
+	margin: 0px;
+	font-size: 36px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+}   
+   
+.about .icons-row{
 	display: inline-block;
-	width: 380px;
-	margin: 5% 0px;
-	padding: 0px 20px 10px 20px;
-	border-bottom: solid 2px rgba(153,153,153,0.4);
+	width: 90%;
+	margin: 30px auto;
 }
 
-#navbar li{
-	font-family: 'Raleway', Helvetica, sans-serif;
-	font-size: 1.2em;
-	font-weight: 700;
-	text-transform: uppercase;
-	list-style: none;
+.about .icons{
+	width: 10%;
 	float: left;
-	margin-right: 35px;
+	margin-right: 8%;	
 }
 
-#navbar li:last-child{
+.about .icons:last-child{
 	margin-right: 0px;
 }
 
-#navbar a{
-	text-decoration: none;
-	color: #666;
+.about .icons img{
+	width: 50px;
 }
 
-a{
-	text-decoration: none;
+.about .icons p{
+	font-weight: bold;
 }
 
-a:hover{
-	text-decoration: none;
+.intro .col-sm-4{
+	font-family: 'Mate', serif;
+	text-align: right;
+	font-size: 24px;
+	line-height: 36px;
 }
 
-#navbar a:hover{
-	color: #ff6b20;
-	-webkit-transition: all 0.3s ease;
-	   -moz-transition: all 0.3s ease;
-		 -o-transition: all 0.3s ease;
-		    transition: all 0.3s ease;
+.intro .col-sm-8 p{
+	color: #aaa;
+	font-family: 'Mate', serif;
+	font-size: 16px;
+	line-height: 34px;
+	-webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
 }
-
-.bttn{
-	background-color: #ff9933;
-	font-family: 'Raleway', Helvetica, sans-serif;
-	text-transform: uppercase;
-	font-size: 1.125em;
-	font-weight: 600;
-	padding: 15px;
-	border: none;
-	border-bottom: 5px solid #ff6b20;
-	border-radius: 5px;
-	display: block;
-	margin: 4% auto;
-	color: #fff;
-}
-
-.bttn:hover{
-	background-color: #ff7119;
-	border-bottom: 5px solid #ff9933;
-}
-
 
 /* --------------------------------------------------------------------------
-   Work (portfolio) section
+   Portfolio section
    -------------------------------------------------------------------------- */
 
-section[id^="work"]{
-	padding: 10% 0%;
+/* Main Styles */
+
+.work-intro{
+	margin: 50px 0px;
+	text-align: center;
 }
 
-section[id^="work"] img{
-	width: 800px;
+.work-intro h2{
+	font-size: 28px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
 }
 
-section[id^="work"] .bttn{
-	text-transform: lowercase;
-	margin: 20px 0px;
-	padding: 10px;
-}
-
-section[id^="work"] h2{
-	font-family: 'ralewaymedium';
-	font-size: 2.4em;
-	color: #19379c;
-}
-
-#work-2 h2{
-	text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
-}
-
-section[id^="work"] .role, .date{
-	font-family: 'Georgia';
-	font-style: italic;
-	color: #19379c;
-	padding: 10px 0px;
-}
-
-.role{
-	margin-bottom: 0px;
-	border-bottom: solid 1px #19379c;	
-}
-
-.date{
-	border-top: solid 1px rgba(255,255,255,0.5);
-	border-bottom: solid 1px #19379c;
-	margin-bottom: 0px;
-}
-
-.description{
-	border-top: solid 1px rgba(255,255,255,0.5);
-	padding-top: 10px;
+.work-intro p{
+	font-family: 'Mate', serif;
+	font-size: 15px;
 	line-height: 1.6em;
+	color: #999;
 }
 
-#work-1{
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(top,  #ffffff 61%, #f3f4e1 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(61%,#ffffff), color-stop(100%,#f3f4e1)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #ffffff 61%,#f3f4e1 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #ffffff 61%,#f3f4e1 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #ffffff 61%,#f3f4e1 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #ffffff 61%,#f3f4e1 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f4e1',GradientType=0 ); /* IE6-9 */
+.divider{
+	display: block;
+	margin: 30px auto 30px auto;
+	width: 80px;
+	border-bottom: solid 1px #ccc;
 }
 
-#work-2{
-background: #9bccbc; /* Old browsers */
-background: -moz-linear-gradient(top,  #9bccbc 0%, #c5e2d1 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9bccbc), color-stop(100%,#c5e2d1)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #9bccbc 0%,#c5e2d1 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #9bccbc 0%,#c5e2d1 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #9bccbc 0%,#c5e2d1 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #9bccbc 0%,#c5e2d1 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bccbc', endColorstr='#c5e2d1',GradientType=0 ); /* IE6-9 */
+/* Work 1: RGF Singapore */
+
+.work-1{
+	padding-top: 120px;
+}
+
+.work-1 p{
+	padding: 0px 220px;
+}
+
+.work-1 img{
+	display: block;
+	width: 90%;
+	margin: 0px auto;
+}
+
+/* Work 2: PTGC */
+
+.work-2{
+	padding: 120px 0px;
+}
+
+/* Work 2: jermainewong */
+
+.work-3{
+	padding: 100px 0px 350px 0px;
+}
+
+.work-3 img{
+	width: 100%;
 }
 
 /* --------------------------------------------------------------------------
-   About section
+   Button
    -------------------------------------------------------------------------- */
-#about-1{
-	background-color: #f3f6dc;
-	padding: 100px 0px;
-}
-
-section[id^="about"] .row{
-	padding: 0% 10%;
-}
-
-section[id^="about"] h2, h4{
-	font-family: 'Raleway', Helvetica, sans-serif;
-	font-weight: 500;
-	text-align: center;
-}
-
-#about-1 h4{
-	font-family: 'Raleway', Helvetica, sans-serif;
-	font-weight: 500;
-	text-align: center;
-	color: #666;
-}
-
-section[id^="about"] p{
-	font-family: 'Raleway', Helvetica, sans-serif;
-	font-weight: 500;
-	color: #666;
-}
-
-.icon{
-	display: block;
-	margin: 70px auto 30px auto;
-}
-
-#about-2{
-	background-color: rgba(225,235,157,0.8);
-	padding: 100px 0px;
-}
-
-#about-2 h3{
-	font-family: 'Raleway', Helvetica, sans-serif;
-	font-weight: 400;
-	font-size: 1.5em;
-	padding-left: 5%;
-	color: #283d80;
-}
-
-#about-2 p{
-	font-family: 'Raleway', Helvetica, sans-serif;
-	font-weight: 100;
-	font-size: 1.5em;
-	color: #666;
-	line-height: 1.4em;
-	padding-left: 5%;
-}
-
-.profilepic{
-	width: 100%;
-	opacity: 0.85;
+.btn{
+	display: inline-block;
+	margin-top: 20px;
+	padding: 5px 18px;
+	border: solid 3px #030303;
+	border-radius: 0px;
+	color: #030303;
 }
 
 /* --------------------------------------------------------------------------
    Footer
    -------------------------------------------------------------------------- */
-
-#footer{
-	padding: 100px 0px;
-	text-align: center;
+footer{
+	height: 320px;
 }
 
-#footer h3{
-	font-family: 'Raleway', Helvetica, sans-serif;
-	font-weight: 600;
-	font-size: 1.4em;
-	text-transform: uppercase;
-	color: #333;
+footer a{
+	display: inline-block;
+	padding: 50px 0px 20px 0px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 36px;
+	color: #030303;
 }
 
-#footer h2{
-	font-family: 'Raleway', Helvetica, sans-serif;
-	font-weight: 400;
-	font-size: 1.8em;
-	margin-top: 50px;
-	color: #666;
-}
-
-#footer .bttn{
-	font-size: 20px;
-	padding: 15px 20px;
-	margin: 80px auto 110px auto;
-	color: #fff;
-}
-
-#footer a{
-	font-size: 18px;
-}
-
-.social{
-	margin: 0px 25px;
-	padding: 15px;
-	color: #999;
-}
-
-.social:hover{
-	background-color: #B8C0D1;
-	border-radius: 5px;
-	color: #fff;
-    transition: background-color 0s ease 0s, color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-}
-
-.small{
-	font-family: 'Helvetica', sans-serif;
-	font-size: 0.8em;
-	text-transform: uppercase;
-	color: #999;
-	margin-top: 40px;
-}
-
-/* --------------------------------------------------------------------------
-   Modal
-   -------------------------------------------------------------------------- */
-#contactModal h2{
-	font-family: 'Raleway', Helvetica, sans-serif;
-	font-size: 20px;
-	text-transform: uppercase;
-}
-
-#contactModal p{
-	margin-bottom: 0px;
-	color: #999;
-}
-
-#contactModal .btn{
-	background-color: #ff9933;
-	font-family: 'Raleway', Helvetica, sans-serif;
-	text-transform: uppercase;
-	font-weight: 600;
-	padding: 10px 25px;
-	border-bottom: 5px solid #ff6b20;
-	border-radius: 5px;;
-	color: #fff;
-}
-
-#contactModal .btn:hover{
-	background-color: #ff7119;
-	border-bottom: 5px solid #ff9933;
+footer a:hover{
+	color: #b99867;
 }
 
 /* --------------------------------------------------------------------------
    Media Queries for Responsive Design.
    -------------------------------------------------------------------------- */
-@media screen and (max-width: 1200px){
-	section[id^="work"] img{
-		width: 650px;
-	}
-}
 
 @media screen and (max-width: 1000px){
-	header h1{
-		font-size: 54px;
-	}
-	section[id^="work"] img{
-		width: 100%;
+	.work-1 p{
+		padding: 0px 120px;
 	}
 }
 
-@media screen and (max-width: 580px){
-	header{
-		height: 400px;
+
+@media screen and (max-width: 768px){
+	.work-2 img{
+		width: 100%;
 	}
-	header h1{
-		font-size: 36px;
+	.interim-title{
+		bottom: 95px;
 	}
-	header h3{
-		font-size: 18px;
+	.interim-title-work{
+		bottom: -135px;
 	}
-	#navbar{
-		width: 300px;
-		padding: 0px 10px 10px 10px;
+	.work-2{
+		padding: 60px 0px;
 	}
-	#navbar li{
-		margin-right: 25px;
-		font-size: 14px;
+	.work-3{
+		padding-top: 60px;
 	}
-	section[id^="work"] h2{
+}
+
+@media screen and (max-width: 500px){
+	.work-1 p{
+		padding: 0px 20px;
+	}
+	.intro .col-sm-8 p{
+		line-height: 1.6em;
+		-webkit-column-count: 1; 
+	    -moz-column-count: 1; 
+	    column-count: 1;
+	}
+	.icons-row{
+		display: none !important;
+	}
+	.intro .col-sm-4{
+		text-align: left;
+	}
+	.about .icons-row{
+		display: none;
+	}
+	.work-2 img{
+		width: 100%;
+	}
+	.interim-title{
+		bottom: 115px;
+	}
+	.interim-title-work{
+		bottom: -115px;
+	}
+	.hero-txt h1{
+		font-size: 48px;	
+	}
+	.hero-txt h2{
 		font-size: 24px;
 	}
-	#about-1{
-		padding: 40px 0px;
-	}
-	#about-2{
-		padding: 40px 0px;
+	footer a{
+		padding-top: 20px;
+		font-size: 24px;
 	}
 }

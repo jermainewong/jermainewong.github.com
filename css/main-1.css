@@ -1,0 +1,371 @@
+/* --------------------------------------------------------------------------
+   Header, navbar
+   -------------------------------------------------------------------------- */
+header{
+	height: 600px;
+	background: url('../img/background3.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover; /*for webkit*/
+       -moz-background-size: cover; /*Mozilla*/
+         -o-background-size: cover;
+	        background-size: cover;
+}
+
+header h1{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 74px;
+	font-weight: 700;
+	color: #fff;
+	text-shadow: 3px 3px 3px rgba(153,153,153,0.5);
+}
+
+header h3{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 500;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(153,153,153,0.7);
+}
+
+/* Nav Bar*/
+
+nav .col-xs-12{
+	text-align: center;
+}
+
+#navbar{
+	display: inline-block;
+	width: 380px;
+	margin: 5% 0px;
+	padding: 0px 20px 10px 20px;
+	border-bottom: solid 2px rgba(153,153,153,0.4);
+}
+
+#navbar li{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 1.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	list-style: none;
+	float: left;
+	margin-right: 35px;
+}
+
+#navbar li:last-child{
+	margin-right: 0px;
+}
+
+#navbar a{
+	text-decoration: none;
+	color: #666;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+#navbar a:hover{
+	color: #ff6b20;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+		 -o-transition: all 0.3s ease;
+		    transition: all 0.3s ease;
+}
+
+.bttn{
+	background-color: #ff9933;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 1.125em;
+	font-weight: 600;
+	padding: 15px;
+	border: none;
+	border-bottom: 5px solid #ff6b20;
+	border-radius: 5px;
+	display: block;
+	margin: 4% auto;
+	color: #fff;
+}
+
+.bttn:hover{
+	background-color: #ff7119;
+	border-bottom: 5px solid #ff9933;
+}
+
+
+/* --------------------------------------------------------------------------
+   Work (portfolio) section
+   -------------------------------------------------------------------------- */
+
+section[id^="work"]{
+	padding: 10% 0%;
+}
+
+section[id^="work"] img{
+	width: 800px;
+}
+
+section[id^="work"] .bttn{
+	text-transform: lowercase;
+	margin: 20px 0px;
+	padding: 10px;
+}
+
+section[id^="work"] h2{
+	font-family: 'ralewaymedium';
+	font-size: 2.4em;
+	color: #19379c;
+}
+
+#work-2 h2{
+	text-shadow: 2px 2px 2px rgba(255,255,255,0.5);
+}
+
+section[id^="work"] .role, .date{
+	font-family: 'Georgia';
+	font-style: italic;
+	color: #19379c;
+	padding: 10px 0px;
+}
+
+.role{
+	margin-bottom: 0px;
+	border-bottom: solid 1px #19379c;	
+}
+
+.date{
+	border-top: solid 1px rgba(255,255,255,0.5);
+	border-bottom: solid 1px #19379c;
+	margin-bottom: 0px;
+}
+
+.description{
+	border-top: solid 1px rgba(255,255,255,0.5);
+	padding-top: 10px;
+	line-height: 1.6em;
+}
+
+#work-1{
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 61%, #f3f4e1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(61%,#ffffff), color-stop(100%,#f3f4e1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 61%,#f3f4e1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 61%,#f3f4e1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 61%,#f3f4e1 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 61%,#f3f4e1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f4e1',GradientType=0 ); /* IE6-9 */
+}
+
+#work-2{
+background: #9bccbc; /* Old browsers */
+background: -moz-linear-gradient(top,  #9bccbc 0%, #c5e2d1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9bccbc), color-stop(100%,#c5e2d1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #9bccbc 0%,#c5e2d1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #9bccbc 0%,#c5e2d1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #9bccbc 0%,#c5e2d1 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #9bccbc 0%,#c5e2d1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bccbc', endColorstr='#c5e2d1',GradientType=0 ); /* IE6-9 */
+}
+
+/* --------------------------------------------------------------------------
+   About section
+   -------------------------------------------------------------------------- */
+#about-1{
+	background-color: #f3f6dc;
+	padding: 100px 0px;
+}
+
+section[id^="about"] .row{
+	padding: 0% 10%;
+}
+
+section[id^="about"] h2, h4{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 500;
+	text-align: center;
+}
+
+#about-1 h4{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 500;
+	text-align: center;
+	color: #666;
+}
+
+section[id^="about"] p{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 500;
+	color: #666;
+}
+
+.icon{
+	display: block;
+	margin: 70px auto 30px auto;
+}
+
+#about-2{
+	background-color: rgba(225,235,157,0.8);
+	padding: 100px 0px;
+}
+
+#about-2 h3{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+	padding-left: 5%;
+	color: #283d80;
+}
+
+#about-2 p{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 1.5em;
+	color: #666;
+	line-height: 1.4em;
+	padding-left: 5%;
+}
+
+.profilepic{
+	width: 100%;
+	opacity: 0.85;
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+
+#footer{
+	padding: 100px 0px;
+	text-align: center;
+}
+
+#footer h3{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1.4em;
+	text-transform: uppercase;
+	color: #333;
+}
+
+#footer h2{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 1.8em;
+	margin-top: 50px;
+	color: #666;
+}
+
+#footer .bttn{
+	font-size: 20px;
+	padding: 15px 20px;
+	margin: 80px auto 110px auto;
+	color: #fff;
+}
+
+#footer a{
+	font-size: 18px;
+}
+
+.social{
+	margin: 0px 25px;
+	padding: 15px;
+	color: #999;
+}
+
+.social:hover{
+	background-color: #B8C0D1;
+	border-radius: 5px;
+	color: #fff;
+    transition: background-color 0s ease 0s, color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.small{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	color: #999;
+	margin-top: 40px;
+}
+
+/* --------------------------------------------------------------------------
+   Modal
+   -------------------------------------------------------------------------- */
+#contactModal h2{
+	font-family: 'Raleway', Helvetica, sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#contactModal p{
+	margin-bottom: 0px;
+	color: #999;
+}
+
+#contactModal .btn{
+	background-color: #ff9933;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 10px 25px;
+	border-bottom: 5px solid #ff6b20;
+	border-radius: 5px;;
+	color: #fff;
+}
+
+#contactModal .btn:hover{
+	background-color: #ff7119;
+	border-bottom: 5px solid #ff9933;
+}
+
+/* --------------------------------------------------------------------------
+   Media Queries for Responsive Design.
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px){
+	section[id^="work"] img{
+		width: 650px;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	header h1{
+		font-size: 54px;
+	}
+	section[id^="work"] img{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 580px){
+	header{
+		height: 400px;
+	}
+	header h1{
+		font-size: 36px;
+	}
+	header h3{
+		font-size: 18px;
+	}
+	#navbar{
+		width: 300px;
+		padding: 0px 10px 10px 10px;
+	}
+	#navbar li{
+		margin-right: 25px;
+		font-size: 14px;
+	}
+	section[id^="work"] h2{
+		font-size: 24px;
+	}
+	#about-1{
+		padding: 40px 0px;
+	}
+	#about-2{
+		padding: 40px 0px;
+	}
+}
